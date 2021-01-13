@@ -15,7 +15,7 @@ windowsglobalimage="cppalliance/dronevs2019"
 def main(ctx):
   return [
   linux_cxx("Job 0", "g++", packages="", buildtype="boost", buildscript="drone", image=linuxglobalimage, environment={'DRONE_JOB_UUID': 'b6589fc6ab'}, globalenv=globalenv),
-  osx_cxx("Job 1", "g++", packages="", buildtype="boost", buildscript="drone", environment={'DRONE_JOB_OS_NAME': 'osx', 'DRONE_JOB_UUID': '356a192b79'}, globalenv=globalenv),
+  osx_cxx("Job 1", "g++", packages="", buildtype="boost", buildscript="drone", environment={'DRONE_JOB_UUID': '356a192b79'}, globalenv=globalenv),
   ]
 
 # from https://github.com/boostorg/boost-ci
