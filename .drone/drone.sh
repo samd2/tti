@@ -36,3 +36,5 @@ TOOLSET=gcc,clang
 if [ $TRAVIS_OS_NAME == osx ]; then TOOLSET=clang; fi
 ./b2 --verbose-test libs/config/test//config_info toolset=$TOOLSET || true
 ./b2 libs/tti/test toolset=$TOOLSET
+
+fi
